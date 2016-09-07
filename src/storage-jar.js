@@ -105,7 +105,7 @@ export default class StorageJar {
 	 **/
 	static isTimestampValid(timestamp) {
 		const currentTimestamp = new Date();
-		return timestamp < currentTimestamp.getTime();
+		return currentTimestamp.getTime() <= timestamp;
 	}
 	/**
 	 * This function is responsible for fetching an item from either Cookies or Local Storage.
