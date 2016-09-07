@@ -77,7 +77,7 @@ var StorageJar = function () {
 		key: "isTimestampValid",
 		value: function isTimestampValid(timestamp) {
 			var currentTimestamp = new Date();
-			return timestamp < currentTimestamp.getTime();
+			return currentTimestamp.getTime() <= timestamp;
 		}
 	}, {
 		key: "read",
