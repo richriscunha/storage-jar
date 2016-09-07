@@ -84,7 +84,7 @@ var StorageJar = function () {
 		value: function read(key) {
 			if (this.hasLocalStorage()) {
 				var item = JSON.parse(window.localStorage.getItem(key));
-				if (this.isTimestampValid(item.timestamp)) return item;
+				if (item !== null && this.isTimestampValid(item.timestamp)) return item;
 			} else {
 				var name = key + "=";
 				var cookies = document.cookie.split(';');
