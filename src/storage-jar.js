@@ -122,7 +122,7 @@ export default class StorageJar {
 	static read(key) {
 		if (this.hasLocalStorage()) {
 			let item = JSON.parse(window.localStorage.getItem(key));
-			if (this.isTimestampValid(item.timestamp))
+			if (item !== null && this.isTimestampValid(item.timestamp))
 				return item;
 		} else {
 		    let name = key + "=";
