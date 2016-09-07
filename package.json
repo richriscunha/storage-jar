@@ -1,6 +1,6 @@
 {
   "name": "storage-jar",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A minimal API to handle cookies or local storage items.  Allows for the ability to write, read, delete, and contains.",
   "main": "dist/storage-jar.min.js",
   "scripts": {
