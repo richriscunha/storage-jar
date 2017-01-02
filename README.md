@@ -1,6 +1,6 @@
 # StorageJar
 
-[![npm](https://img.shields.io/npm/dt/express.svg)](https://www.npmjs.com/package/storage-jar)
+[![npm](https://img.shields.io/npm/dt/storage-jar.svg)](https://www.npmjs.com/package/storage-jar)
 
 StorageJar is a minimal API for interfacing with Local Storage.  In the event that
 Local Store is not available, StorageJar will fallback to using Cookies.
